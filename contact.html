@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Kandyce Bohannon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Kandyce Bohannon</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="she-builds-episodes.html">AWS She Builds</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main style="margin-top: 70px;">
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Let's Connect</h1>
+                <p class="contact-subtitle">Always excited to discuss AI-powered development, MLOps, and building better developer experiences</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Get In Touch</h2>
+                        <p>I'm passionate about helping developers be more productive with AI tools, building scalable MLOps solutions, and contributing to the AWS community. Whether you want to discuss custom agents, serverless architectures, or collaboration opportunities, I'd love to hear from you!</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <h3>💼 LinkedIn</h3>
+                                <p><a href="https://linkedin.com/in/kandyce-bohannon">linkedin.com/in/kandyce-bohannon</a></p>
+                                <small>Best for professional connections and collaboration opportunities</small>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <h3>🐙 GitHub</h3>
+                                <p><a href="https://github.com/kandyce1010">github.com/kandyce1010</a></p>
+                                <small>Check out my latest projects and contributions</small>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <h3>🎥 AWS She Builds</h3>
+                                <p><a href="https://www.youtube.com/@awsshebuilds">AWS She Builds YouTube Channel</a></p>
+                                <small>Watch my episodes and community contributions</small>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <h3>📚 AWS SkillBuilder</h3>
+                                <p><a href="https://skillbuilder.aws/learn/UZPTQZM7UT/software-development-with-amazon-q-developer/TBR34T5U2U">My SkillBuilder Course</a></p>
+                                <small>Educational content and learning resources</small>
+                            </div>
+                        </div>
+                        
+                        <div class="availability">
+                            <h3>Current Focus</h3>
+                            <p class="status-badge">🚀 Building with Amazon Q Developer & Kiro</p>
+                            <p>I'm currently focused on Amazon Q Developer and Kiro at AWS, helping developers leverage AI for more productive workflows. Always interested in discussing:</p>
+                            <ul>
+                                <li>Custom AI agent development</li>
+                                <li>MLOps and serverless architectures</li>
+                                <li>Developer productivity tools</li>
+                                <li>AWS community initiatives</li>
+                                <li>Speaking and workshop opportunities</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h2>Send a Message</h2>
+                        <form action="https://formspree.io/f/mldpqrdy" method="POST">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a topic...</option>
+                                    <option value="custom-agents">Custom AI Agents</option>
+                                    <option value="mlops">MLOps & Serverless</option>
+                                    <option value="speaking">Speaking Opportunity</option>
+                                    <option value="collaboration">Collaboration</option>
+                                    <option value="aws-community">AWS Community</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project, question, or how we might collaborate..."></textarea>
+                            </div>
+                            
+                            <!-- Formspree honeypot field for spam protection -->
+                            <input type="text" name="_gotcha" style="display:none" />
+                            
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kandyce Bohannon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        .contact-hero {
+            background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .contact-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .contact-content {
+            padding: 80px 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info h2,
+        .contact-form h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #1e293b;
+        }
+
+        .contact-info p {
+            color: #64748b;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .contact-methods {
+            margin-bottom: 3rem;
+        }
+
+        .contact-method {
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 4px solid #c026d3;
+        }
+
+        .contact-method h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: #1e293b;
+        }
+
+        .contact-method p {
+            margin: 0.5rem 0;
+            color: #64748b;
+        }
+
+        .contact-method small {
+            color: #94a3b8;
+            font-style: italic;
+        }
+
+        .contact-method a {
+            color: #c026d3;
+            text-decoration: none;
+        }
+
+        .contact-method a:hover {
+            text-decoration: underline;
+        }
+
+        .availability h3 {
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+
+        .status-badge {
+            background: #dcfce7;
+            color: #166534;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .availability ul {
+            color: #64748b;
+            margin-left: 1.5rem;
+        }
+
+        .availability li {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #1e293b;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #c026d3;
+        }
+
+        .form-note {
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            color: #64748b;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .contact-hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</body>
+</html>
