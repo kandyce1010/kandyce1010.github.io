@@ -183,31 +183,69 @@
         <section class="speaking-section" id="speaking">
             <div class="container">
                 <h2>Speaking & Community</h2>
-                
-                <div class="reinvent-banner" style="background: white; border-radius: 10px; box-shadow: 0 4px 16px rgba(193,140,140,0.18); border-left: 4px solid #C18C8C; padding: 2rem; margin-bottom: 2rem;">
-                    <div class="banner-content" style="flex-direction: row; align-items: center; gap: 2rem;">
-                        <img src="images/dvt330-reinvent-2025.png" alt="DVT330 - Amazon Q Developer CLI Chalk Talk at re:Invent 2025" class="reinvent-image" style="max-width: 180px; border-radius: 8px;">
-                        <div class="banner-text" style="color: #1e293b;">
-                            <h3 style="color: #1e293b;">AWS re:Invent 2025 DVT330</h3>
-                            <p style="color: #64748b;">Delivered a chalk talk on Amazon Q Developer CLI, covering agentic workflows and real-world developer productivity patterns.</p>
+                <p class="speaking-intro">Three years on the re:Invent stage across technical demos, session talks, and chalk talks — spanning generative AI, responsible AI, and developer productivity.</p>
+
+                <div class="speaking-cards">
+
+                    <div class="speaking-card">
+                        <div class="speaking-card-image">
+                            <img src="images/dvt330-reinvent-2025.png" alt="DVT330 - Amazon Q Developer CLI Chalk Talk at re:Invent 2025" />
+                        </div>
+                        <div class="speaking-card-content">
+                            <div class="speaking-meta-row">
+                                <span class="speaking-event-badge">AWS re:Invent 2025</span>
+                                <span class="speaking-type-badge">Chalk Talk</span>
+                                <span class="speaking-session-id">DVT330</span>
+                            </div>
+                            <h3>Amazon Q Developer CLI: A Lightning-Fast Coding Experience</h3>
+                            <p>Covered agentic AI development workflows, CLI automation patterns, and real-world developer productivity gains with Amazon Q Developer CLI — including live demos of agent-driven coding flows.</p>
+                            <div class="speaking-links">
+                                <!-- Add re:Invent session catalog URL here when available -->
+                            </div>
                         </div>
                     </div>
+
+                    <div class="speaking-card">
+                        <div class="speaking-card-image">
+                            <img src="images/me-speaking.jpg" alt="Speaking at re:Invent 2024 on Bias Detection in LLMOps" />
+                        </div>
+                        <div class="speaking-card-content">
+                            <div class="speaking-meta-row">
+                                <span class="speaking-event-badge">AWS re:Invent 2024</span>
+                                <span class="speaking-type-badge">Session Talk</span>
+                            </div>
+                            <h3>Bias Detection in LLMOps: Embedding ID&amp;E into LLM Lifecycles</h3>
+                            <p>Explored practical frameworks for detecting and mitigating bias in production LLM pipelines — covering evaluation strategies, fairness metrics, and how to embed identity-conscious design throughout the LLM lifecycle.</p>
+                            <div class="speaking-links">
+                                <a href="https://www.youtube.com/watch?v=nG8sjVyeTq0" class="speaking-link-btn" target="_blank" rel="noopener">▶ Watch Recording</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="speaking-card">
+                        <div class="speaking-card-image builders-fair">
+                            <img src="images/me-spheres.jpg" alt="At AWS re:Invent 2022, Amazon Spheres" />
+                        </div>
+                        <div class="speaking-card-content">
+                            <div class="speaking-meta-row">
+                                <span class="speaking-event-badge">AWS re:Invent 2022</span>
+                                <span class="speaking-type-badge">Builders Fair</span>
+                            </div>
+                            <h3>Image-to-Speech Generative AI Application</h3>
+                            <p>Demoed a serverless generative AI application converting images to audio descriptions for accessibility — built on SageMaker and Hugging Face. The project was later published as official AWS Solutions Guidance.</p>
+                            <div class="speaking-links">
+                                <a href="https://aws.amazon.com/blogs/machine-learning/introducing-an-image-to-speech-generative-ai-application-using-amazon-sagemaker-and-hugging-face/" class="speaking-link-btn" target="_blank" rel="noopener">Read AWS Blog Post</a>
+                                <a href="https://aws.amazon.com/solutions/guidance/image-to-text-and-image-to-speech-on-aws/" class="speaking-link-btn speaking-link-secondary" target="_blank" rel="noopener">AWS Solutions Guidance</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="speaking-grid">
-                    <div class="speaking-feature">
-                        <img src="images/me-speaking.jpg" alt="Speaking at re:Invent on Bias Detection in LLMOps" />
-                        <p class="photo-caption">Speaking at AWS re:Invent 2024 on "Bias detection in LLMOps: Embedding ID&E into LLM lifecycles"</p>
-                    </div>
-                    <div class="aws-photos-grid">
-                        <div class="aws-photo">
-                            <img src="images/me-spheres.jpg" alt="At the Amazon Spheres in Seattle" />
-                            <p class="photo-caption">At the Amazon Spheres, Seattle</p>
-                        </div>
-                        <div class="aws-photo">
-                            <img src="images/aws-event.jpg" alt="At AWS Think Big event" />
-                            <p class="photo-caption">AWS Think Big event</p>
-                        </div>
+                <div class="speaking-photos">
+                    <div class="aws-photo">
+                        <img src="images/aws-event.jpg" alt="At AWS Think Big event" />
+                        <p class="photo-caption">AWS Think Big event</p>
                     </div>
                 </div>
             </div>
@@ -476,35 +514,145 @@
 
         .speaking-section h2 {
             font-size: 2rem;
-            margin-bottom: 2rem;
+            margin-bottom: 0.75rem;
             color: #1e293b;
             text-align: center;
         }
 
-        .speaking-grid {
+        .speaking-intro {
+            text-align: center;
+            color: #64748b;
+            font-size: 1.05rem;
+            margin-bottom: 3rem;
+        }
+
+        .speaking-cards {
             display: grid;
             gap: 2rem;
+            margin-bottom: 3rem;
         }
 
-        .speaking-feature {
-            text-align: center;
-        }
-
-        .speaking-feature img {
-            width: 100%;
-            max-width: 800px;
+        .speaking-card {
+            background: white;
             border-radius: 10px;
             box-shadow: 0 4px 16px rgba(193,140,140,0.18);
+            border-left: 5px solid #c026d3;
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
 
-        .aws-photos-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+        .speaking-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 28px rgba(193,140,140,0.28);
+        }
+
+        .speaking-card-image {
+            overflow: hidden;
+            background: #e2e8f0;
+        }
+
+        .speaking-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .speaking-card-content {
+            padding: 1.75rem;
+        }
+
+        .speaking-meta-row {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.75rem;
+        }
+
+        .speaking-event-badge {
+            background: linear-gradient(135deg, #ec4899, #8b5cf6);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.25rem 0.6rem;
+            border-radius: 20px;
+        }
+
+        .speaking-type-badge {
+            background: #e2e8f0;
+            color: #475569;
+            font-size: 0.75rem;
+            font-weight: 500;
+            padding: 0.25rem 0.6rem;
+            border-radius: 20px;
+        }
+
+        .speaking-session-id {
+            color: #c026d3;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+
+        .speaking-card-content h3 {
+            font-size: 1.2rem;
+            color: #1e293b;
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+
+        .speaking-card-content p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.25rem;
+        }
+
+        .speaking-links {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .speaking-link-btn {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+            background: linear-gradient(135deg, #ec4899, #8b5cf6);
+            color: white;
+            transition: opacity 0.2s;
+        }
+
+        .speaking-link-btn:hover {
+            opacity: 0.88;
+        }
+
+        .speaking-link-secondary {
+            background: none;
+            border: 2px solid #c026d3;
+            color: #c026d3;
+        }
+
+        .speaking-link-secondary:hover {
+            background: #fdf4ff;
+            opacity: 1;
+        }
+
+        .speaking-photos {
+            display: flex;
+            justify-content: center;
             gap: 2rem;
         }
 
         .aws-photo {
             text-align: center;
+            max-width: 400px;
         }
 
         .aws-photo img {
@@ -514,15 +662,19 @@
         }
 
         .photo-caption {
-            margin-top: 1rem;
+            margin-top: 0.75rem;
             color: #64748b;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-style: italic;
         }
 
         @media (max-width: 768px) {
-            .aws-photos-grid {
+            .speaking-card {
                 grid-template-columns: 1fr;
+            }
+
+            .speaking-card-image {
+                height: 200px;
             }
         }
     </style>
