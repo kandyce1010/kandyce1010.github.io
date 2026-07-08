@@ -1,8 +1,8 @@
 /* Design tokens — edit here to update the whole site */
 :root {
-    --color-primary: var(--color-primary);
-    --color-primary-dark: var(--color-primary-dark);
-    --color-primary-light: var(--color-primary-light);
+    --color-primary: #C18C8C;
+    --color-primary-dark: #A67070;
+    --color-primary-light: #fef3f3;
     --color-primary-shadow: rgba(193, 140, 140, 0.18);
     --color-primary-shadow-dark: rgba(193, 140, 140, 0.28);
     --color-text: #1e293b;
