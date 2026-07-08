@@ -1,3 +1,17 @@
+/* Design tokens — edit here to update the whole site */
+:root {
+    --color-primary: var(--color-primary);
+    --color-primary-dark: var(--color-primary-dark);
+    --color-primary-light: var(--color-primary-light);
+    --color-primary-shadow: rgba(193, 140, 140, 0.18);
+    --color-primary-shadow-dark: rgba(193, 140, 140, 0.28);
+    --color-text: #1e293b;
+    --color-text-muted: #64748b;
+    --color-text-mid: #475569;
+    --color-bg: #f8fafc;
+    --color-border: #e2e8f0;
+}
+
 /* Reset and base styles */
 * {
     margin: 0;
@@ -41,7 +55,7 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #C18C8C;
+    color: var(--color-primary);
 }
 
 .nav-menu {
@@ -58,13 +72,13 @@ nav {
 }
 
 .nav-menu a:hover {
-    color: #C18C8C;
+    color: var(--color-primary);
 }
 
 .nav-menu a.active {
-    color: #C18C8C;
+    color: var(--color-primary);
     font-weight: 600;
-    border-bottom: 2px solid #C18C8C;
+    border-bottom: 2px solid var(--color-primary);
 }
 
 /* Mobile menu toggle */
@@ -171,7 +185,7 @@ nav {
 }
 
 .highlight {
-    color: #C18C8C;
+    color: var(--color-primary);
 }
 
 .hero-subtitle {
@@ -208,14 +222,14 @@ nav {
 }
 
 .btn-primary {
-    background: #C18C8C;
+    background: var(--color-primary);
     color: white;
-    border-color: #C18C8C;
+    border-color: var(--color-primary);
 }
 
 .btn-primary:hover {
-    background: #A67070;
-    border-color: #A67070;
+    background: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
     transform: translateY(-2px);
 }
 
@@ -232,14 +246,14 @@ nav {
 
 /* Hero section button overrides — light background, no white-on-white issues */
 .hero .btn-primary {
-    background: #C18C8C;
-    border-color: #C18C8C;
+    background: var(--color-primary);
+    border-color: var(--color-primary);
     color: white;
 }
 
 .hero .btn-primary:hover {
-    background: #A67070;
-    border-color: #A67070;
+    background: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
 }
 
 .hero .btn-secondary {
@@ -279,7 +293,7 @@ nav {
 .section-divider {
     width: 60px;
     height: 3px;
-    background: #C18C8C;
+    background: var(--color-primary);
     margin: 1rem auto 3rem;
     border-radius: 2px;
 }
@@ -294,14 +308,14 @@ nav {
     background: #f8fafc;
     border-radius: 12px;
     padding: 2.5rem;
-    border-left: 4px solid #C18C8C;
-    box-shadow: 0 4px 16px rgba(193,140,140,0.18);
+    border-left: 4px solid var(--color-primary);
+    box-shadow: 0 4px 16px var(--color-primary-shadow);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .engagement-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 28px rgba(193,140,140,0.28);
+    box-shadow: 0 8px 28px var(--color-primary-shadow-dark);
 }
 
 .engagement-icon {
@@ -317,7 +331,7 @@ nav {
 
 .engagement-meta {
     font-size: 0.875rem;
-    color: #C18C8C;
+    color: var(--color-primary);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -360,19 +374,19 @@ nav {
     background: white;
     border-radius: 12px;
     padding: 2rem;
-    box-shadow: 0 4px 16px rgba(193,140,140,0.18);
-    border-left: 4px solid #C18C8C;
+    box-shadow: 0 4px 16px var(--color-primary-shadow);
+    border-left: 4px solid var(--color-primary);
     height: 100%;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .leadership-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 28px rgba(193,140,140,0.28);
+    box-shadow: 0 8px 28px var(--color-primary-shadow-dark);
 }
 
 .leadership-card.featured-host {
-    border-top: 4px solid #C18C8C;
+    border-top: 4px solid var(--color-primary);
 }
 
 .leadership-icon {
@@ -388,7 +402,7 @@ nav {
 
 .leadership-card h4 {
     font-size: 0.95rem;
-    color: #C18C8C;
+    color: var(--color-primary);
     font-weight: 600;
     margin-bottom: 0.75rem;
 }
@@ -402,8 +416,8 @@ nav {
 
 .viewer-count {
     display: inline-block;
-    background: #fef3f3;
-    color: #C18C8C;
+    background: var(--color-primary-light);
+    color: var(--color-primary);
     font-weight: 700;
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
@@ -434,14 +448,14 @@ nav {
     background: white;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 4px 16px rgba(193,140,140,0.18);
-    border-left: 4px solid #C18C8C;
+    box-shadow: 0 4px 16px var(--color-primary-shadow);
+    border-left: 4px solid var(--color-primary);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 28px rgba(193,140,140,0.28);
+    box-shadow: 0 8px 28px var(--color-primary-shadow-dark);
 }
 
 .project-card h3 {
@@ -471,13 +485,13 @@ nav {
 }
 
 .project-link {
-    color: #C18C8C;
+    color: var(--color-primary);
     text-decoration: none;
     font-weight: 600;
 }
 
 .project-link:hover {
-    color: #A67070;
+    color: var(--color-primary-dark);
     text-decoration: underline;
 }
 
